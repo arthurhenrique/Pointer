@@ -13,3 +13,6 @@ Conceito de ponteiro, com passagem de referência ou por cópia em C++
 ### Debug
 Criei uma função debug que imprime: "[__LINE__] __FUNCTION__(value);"
 
+### Inspiração
+![alt text] (./gif/pass-by-reference-vs-pass-by-value-animation.gif "animation")
+
