@@ -2,6 +2,7 @@
 
 using namespace std; 
 
+
 //copia(int, const char*, int)
 //Depurar programa
 //Imprime [__LINE__] __FUNCTION__(value);
@@ -18,15 +19,15 @@ void copia(int value)
     debug(value,__FUNCTION__, __LINE__);
 }
 //copiaPonteiro(int*)
-//Recebe valor e altera globalmente através de ponteiro
+//Recebe valor e altera globalmente atravÃ©s de ponteiro
 void copiaPonteiro(int *value)
 {
     debug(*value,__FUNCTION__, __LINE__);
     *value = 0;
     debug(*value,__FUNCTION__, __LINE__);
 }
-//referencia(int &endereço)
-//Recebe valor e altera globalmente através de endereço
+//referencia(int &endereÃ§o)
+//Recebe valor e altera globalmente atravÃ©s de endereÃ§o
 void referencia(int &value)
 {
     debug(value,__FUNCTION__, __LINE__);
@@ -46,13 +47,13 @@ int main(int argc, const char *argv[])
     debug(x,__FUNCTION__, __LINE__);
     cout << endl;
 
-    //Passagem por referência, enviado endereço &x - variavel global
+    //Passagem por referÃªncia, enviado endereÃ§o &x - variavel global
     debug(y,__FUNCTION__, __LINE__);
     copiaPonteiro(&y);
     debug(y,__FUNCTION__, __LINE__);
     cout << endl;
 
-    //Passagem por referência - variavel global
+    //Passagem por referÃªncia - variavel global
     debug(z,__FUNCTION__, __LINE__);
     referencia(z);
     debug(z,__FUNCTION__, __LINE__);
